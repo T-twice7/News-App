@@ -1,0 +1,20 @@
+
+<ion-content padding >
+  <ion-header>
+    <h1>Sports news
+        <!-- <button ion-button small (click)="home()"><ion-icon name="arrow-back"></ion-icon></button> -->
+        <button ion-button small (click)="home()">
+            <ion-icon name="home"></ion-icon>
+        </button>
+    </h1>
+    
+    </ion-header>
+      <ion-list>
+        <ion-item *ngFor="let i of spt, let a = index" (click)="viewS(a)">
+              <ion-thumbnail item-start>
+                  <img src="{{i.urlToImage}}" alt="W-Hnews...IMAGE" (click)="viewS(a)">
+                </ion-thumbnail>
+                <h2 (click)="viewS(a)">{{i.title}}</h2>
+          </ion-item>
+        </ion-list>
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-header>
+
+    <ion-navbar color="purple">
+      <ion-title>News</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+<ion-content padding *ngFor="let i of article">
+    <ion-header>
+        <h1>{{i.title}}
+            <button ion-button small (click)="home()">
+                <ion-icon name="home"></ion-icon>
+            </button> 
+
+        </h1>
+    
+      </ion-header>
+      <ion-content class="home">
+          <img src="{{i.urlToImage}}"  [alt]="src">  <br>
+        <p>
+            
+          {{i.description}}. <a href="{{i.url}}">continue</a>
+          </p>
+          
+        </ion-content>
+      <ion-footer>
+          
+          <p class="pel">published At: {{i.publishedAt}}</p>
+          
+        </ion-footer>
+</ion-content>

@@ -1,0 +1,77 @@
+page-news {
+    
+    div.scroll-content{
+        // margin: 5%;
+        // background-color: rgb(37, 37, 99);
+        background: linear-gradient(rgb(53, 18, 53),black);
+        ion-header{
+            color: white;
+            h1{
+                // background-color: aliceblue;
+                padding: 1px;
+                font-family: serif;
+                font-weight: bolder;
+                font-size: 300%;
+                text-shadow: 0 0 10px white; 
+            }
+            button{
+                // margin-left: 10%;
+                // background-color: rgb(67, 67, 110);
+                background-color: transparent;
+                border: 1px inset white;
+                float: right;
+            }
+            h5{
+                text-align: center;
+                font-family: cursive;
+                letter-spacing: 1px;
+            }
+            ion-slides{
+                // margin: 5%;
+                margin: 0.2em;
+                display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+                img{
+                    margin: 5%;
+                    box-shadow: 0 0 4px white;
+                    border-radius: 10px;
+                    height: 10em;
+                    width: 15em;
+                }
+            }
+           
+        }
+        ion-footer{
+            // margin-top: 20%;
+            margin: 0.1em;
+            overflow: scroll;
+                overflow-x: hidden;
+            max-height: 45%;
+            ion-list{
+                margin: 0%;
+                border: none;
+                // background-color: rgb(67, 67, 110);
+                background-color: transparent;
+                // box-shadow: 0 0 4px black;
+                border-radius: 10px;
+                ion-item{
+                    margin: 0%;
+                    background-color: transparent;
+                    border: none;
+                    ion-avatar{
+                        margin: 0%;
+                    }
+                }
+            }
+            h2{
+                color: white;
+                font-family: monospace;
+                font-size: 100%;
+            }
+           
+        }
+       
+    }
+}

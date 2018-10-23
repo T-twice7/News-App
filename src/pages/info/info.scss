@@ -1,0 +1,46 @@
+page-info {
+   
+    div.scroll-content{
+        
+        background: linear-gradient(rgb(53, 18, 53),black);
+
+        h1{
+            text-shadow: 1px 1px 2px white;
+            color: white;
+            font-style: italic;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        button{
+            background-color: transparent;
+            border: 1px inset white;
+            float: right;
+        }
+       
+    ion-content.home{
+    background-color: transparent;
+   
+      img{
+          border-radius: 5%;
+        max-height: 100%;
+        max-width: 100%;
+        box-shadow: 0 0 10px black;  
+      }
+      p{
+          font-family: initial;
+          color: white;
+    
+      }
+      
+    }
+ion-footer{
+    p.pel{
+        float: right;
+        color: white;
+        font-family: initial;
+        letter-spacing: 0.1rem;
+        font-size: 70%;
+    }
+}
+    
+    }
+}

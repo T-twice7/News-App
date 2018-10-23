@@ -1,0 +1,27 @@
+
+  <ion-content padding>
+    <ion-header>
+      <h1>Today's news
+        <button ion-button small (click)="pop()">
+            <ion-icon name="list"></ion-icon>
+        </button>
+      </h1>
+    <!-- <br> -->
+    <h5>You don't want to miss!</h5>
+      <ion-slides pager>
+          <ion-slide *ngFor="let i of arr, let a = index" (click)="view(a)">
+            <img src="{{i.urlToImage}}" />
+          </ion-slide>
+        </ion-slides>
+      </ion-header>
+      <ion-footer>
+          <ion-list *ngFor="let i of arr, let a = index" (click)="view(a)" no-lines>
+              <ion-item>
+                <ion-avatar item-start>
+                  <img src="{{i.urlToImage}}">
+                </ion-avatar>
+                <h2>{{i.title}}</h2>
+              </ion-item>
+            </ion-list>
+        </ion-footer>
+  </ion-content>

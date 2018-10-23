@@ -1,0 +1,34 @@
+page-home {
+    
+div.scroll-content{
+    // filter: opacity(0.5);
+   
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background:linear-gradient(rgba(77, 75, 75, 0.411),rgba(0, 0, 0, 0.705));
+    div{
+        margin: 20%;
+        h4,h1, p{
+            color: white;
+            font-weight: lighter;
+            letter-spacing: 5px;
+            
+        }
+        h1{
+            font-weight: bolder;
+            text-shadow: 0 0 10px whitesmoke;
+            font-family: serif;
+            font-style: oblique;
+            font: italic;
+            font-size: 200%;
+        }
+        p{
+            letter-spacing: 2px;
+            font-size: 70%;
+        }
+        
+    }
+}
+}
